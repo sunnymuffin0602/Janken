@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
     ImageView enemyImageView;
     ImageView playerImageView;
-    TextView resultImageView;
+
+    TextView resultTextView;
     Random enemyRandom = new Random();
 
 
@@ -26,23 +27,49 @@ public class MainActivity extends AppCompatActivity {
 
         enemyImageView = (ImageView) findViewById(R.id.enemy);
         playerImageView = (ImageView) findViewById(R.id.player);
-        resultImageView = (TextView) findViewById(R.id.result);
+        resultTextView = (TextView) findViewById(R.id.result);
     }
 
     public void gu(View v) {
         int enemy = enemyRandom.nextInt(3);
         playerImageView.setImageResource(R.drawable.gu);
-        
 
+        switch (enemy) {
+            case GU:
+                enemyImageView.setImageResource(R.drawable.gu);
+                resultTextView.setText("あいこ");
+                break;
 
-        //ジャッジ書き足す
-
-
+            case CHOKI:
+                enemyImageView.setImageResource(R.drawable.choki);
+                resultTextView.setText("かち");
+                break;
+            case PA:
+                enemyImageView.setImageResource(R.drawable.pa);
+                resultTextView.setText("まけ");
+                break;
+        }
     }
 
     public void choki(View v) {
         int enemy = enemyRandom.nextInt(3);
         playerImageView.setImageResource(R.drawable.choki);
+
+        switch (enemy) {
+            case GU:
+                enemyImageView.setImageResource(R.drawable.gu);
+                resultTextView.setText("まけ");
+                break;
+
+            case CHOKI:
+                enemyImageView.setImageResource(R.drawable.choki);
+                resultTextView.setText("あいこ");
+                break;
+            case PA:
+                enemyImageView.setImageResource(R.drawable.pa);
+                resultTextView.setText("かち");
+                break;
+        }
 
 
     }
@@ -50,6 +77,21 @@ public class MainActivity extends AppCompatActivity {
     public void pa(View v) {
         playerImageView.setImageResource(R.drawable.pa);
         int enemy = enemyRandom.nextInt(3);
+        switch (enemy) {
+            case GU:
+                enemyImageView.setImageResource(R.drawable.gu);
+                resultTextView.setText("かち");
+                break;
+
+            case CHOKI:
+                enemyImageView.setImageResource(R.drawable.choki);
+                resultTextView.setText("まけ");
+                break;
+            case PA:
+                enemyImageView.setImageResource(R.drawable.pa);
+                resultTextView.setText("あいこ");
+                break;
+        }
 
     }
 }
