@@ -15,7 +15,8 @@
         android:id="@+id/enemy"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:src="@drawable/gu"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -34,7 +35,8 @@
         android:id="@+id/player"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:src="@drawable/gu"/>
 
     <TextView
         android:layout_width="match_parent"
