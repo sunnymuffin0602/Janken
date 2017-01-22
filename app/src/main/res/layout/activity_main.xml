@@ -16,58 +16,58 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
-        android:src="@drawable/gu"/>
+        android:src="@drawable/gu" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CPU"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:text="CPU" />
 
     <TextView
         android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="result"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:text="result" />
 
     <ImageView
         android:id="@+id/player"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
-        android:src="@drawable/gu"/>
+        android:src="@drawable/gu" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="player"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:text="player" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal">
 
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:onClick="gu"
-            android:src="@drawable/gu"/>
+            android:src="@drawable/gu" />
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:onClick="choki"
-            android:src="@drawable/choki"/>
+            android:src="@drawable/choki" />
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:onClick="pa"
-            android:src="@drawable/pa"/>
+            android:src="@drawable/pa" />
 
     </LinearLayout>
 
